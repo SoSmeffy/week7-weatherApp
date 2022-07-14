@@ -1,3 +1,14 @@
 h1 {
-  color: blue;
+  color: orangered;
+}
+li {
+  color: orangered;
+}
+.container {
+  margin: 60px auto;
+}
+
+.weather-app {
+  margin: 0 auto;
+  max-width: 665px;
 }
