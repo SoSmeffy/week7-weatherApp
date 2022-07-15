@@ -1,8 +1,47 @@
+body {
+  background-color: #f9f7fe;
+}
 h1 {
-  color: orangered;
+  color: #272142;
+}
+form {
+  margin-top: 40px;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 1rem;
 }
 li {
-  color: orangered;
+  list-style-type: none;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+img {
+  position: relative;
+  margin-right: 20px;
+  top: -25px;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 18px;
+  color: rgba(39, 33, 66, 0.4);
+}
+a {
+  color: #885df1;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #885df1;
 }
 .container {
   margin: 60px auto;
@@ -10,6 +49,92 @@ li {
 
 .weather-app {
   margin: 0 auto;
-  max-width: 665px;
-  border: 1px black;
+  max-width: 800px;
+  padding: 60px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+}
+.search-input {
+  background: #f9f7fe;
+  width: 100%;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  color: #a9a6b3;
+}
+
+.btn {
+  background: #885df1;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+}
+
+.todaysForecast {
+  margin-top: 20px;
+}
+
+.todaysForecast h1 {
+  margin: 20px 0 10px;
+  font-size: 2.5rem;
+}
+.humidity {
+  color: #f65282;
+}
+.windSpeed {
+  color: #f65282;
+}
+.todaysTemperature {
+  text-align: right;
+}
+
+.temperature {
+  font-weight: 700;
+  font-size: 80px;
+}
+.units {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+
+.fiveDayForecast {
+  text-align: center;
+  margin: 40px 0;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 50px;
+}
+
+.dailyInfo {
+  display: block;
+}
+
+.day {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+.dailyIcon {
+  margin: 20px;
+  font-size: 38px;
+}
+.dailyTemp {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #f65282;
+  font-weight: 700;
+}
+
+.minTemp {
+  margin-left: 10px;
+  opacity: 0.6;
 }
