@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -36,14 +37,15 @@
         </form>
         <div class="todaysForecast row">
           <div class="col-6">
-            <h1>New York</h1>
+            <h1 id="city">New York</h1>
             <ul>
-              <li>Wednesday 21:33, scattered cloud</li>
+              <li>Wednesday 21:33, <span id="description"> clear sky</span></li>
               <li>
                 Humidity:
-                <span class="humidity"> 50%,</span>
-                Wind:
-                <span class="windSpeed">7.2km/h</span>
+                <span class="humidity-wind" id="humidity"> 50</span>
+                %, Wind:
+                <span class="humidity-wind" id="wind">7.2</span>
+                km/h
               </li>
             </ul>
           </div>
@@ -53,7 +55,7 @@
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="partly cloudy"
               />
-              <span class="temperature">30</span>
+              <span class="temperature" id="todaysTemperature">30</span>
               <span class="units">°C</span>
             </div>
           </div>

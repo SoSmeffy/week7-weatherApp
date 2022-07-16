@@ -84,12 +84,10 @@ a:hover {
   margin: 20px 0 10px;
   font-size: 2.5rem;
 }
-.humidity {
+.humidity-wind {
   color: #f65282;
 }
-.windSpeed {
-  color: #f65282;
-}
+
 .todaysTemperature {
   text-align: right;
 }
