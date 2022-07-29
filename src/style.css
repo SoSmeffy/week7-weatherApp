@@ -136,3 +136,12 @@ a:hover {
   margin-left: 10px;
   opacity: 0.6;
 }
+
+.todaysTemperature .active {
+  color: #272142;
+  cursor: default;
+}
+
+.todaysTemperature .active:hover {
+  text-decoration: none;
+}
