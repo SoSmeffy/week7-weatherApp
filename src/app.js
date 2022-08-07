@@ -106,33 +106,8 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#todaysTemperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  celciusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-function displayCelcius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#todaysTemperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  fahrenheitLink.classList.remove("active");
-  celciusLink.classList.add("active");
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", displayCelcius);
 
 search("London");
 displayForecast();
